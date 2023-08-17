@@ -7,11 +7,6 @@
 
 import SwiftUI
 
-struct Cloth: Identifiable{
-    var id: Int
-    var name: String
-}
-
 struct Main: View {
     
     var body: some View {
