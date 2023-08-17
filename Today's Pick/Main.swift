@@ -9,16 +9,11 @@ import SwiftUI
 
 struct Cloth: Identifiable{
     var id: Int
-    var name1: String
-    var name2: String
+    var name: String
 }
 
 struct Main: View {
-    @State private var clothes = [
-        Cloth(id: 1, name1: "옷 1-1", name2: "옷 1-2"),
-        Cloth(id: 2, name1: "옷 2-1", name2: "옷 2-2"),
-        Cloth(id: 3, name1: "옷 3-1", name2: "옷 3-2")
-    ]
+    
     var body: some View {
         ZStack(){
             LinearGradient(gradient: Gradient( colors: [ Color(red: 32/255, green: 74/255, blue: 138/255), Color(red: 103/255, green: 151/255, blue: 213/255)]),startPoint: .top, endPoint: .bottom).ignoresSafeArea(.all)
@@ -42,38 +37,14 @@ struct Main: View {
                             .foregroundColor(.white)
                             .frame(width: 293, height: 20.28, alignment: .leading)
                         Divide()
-                        ForEach(clothes) { clothes in
-                            HStack{
-                                Text(clothes.name1)
-                                    .foregroundColor(.white)
-                                    .font(.system(size: 18, weight: .regular))
-                                    .frame(width: 146, height: 20, alignment: .leading)
-                                Text(clothes.name2)
-                                    .foregroundColor(.white)
-                                    .font(.system(size: 18, weight: .regular))
-                                    .frame(width: 138, height: 20, alignment: .leading)
-                            }
-                            Divide()
-                        }
+                        RecommendGridView()
                         Text("기온이 떨어지는 구간이 있으니, 고려해보세요!")
                             .font(.system(size: 13, weight: .regular))
                             .foregroundColor(.white)
                             .frame(width: 293, height: 20.28, alignment: .leading)
                             .padding(.top, 17.4)
                         Divide()
-                        ForEach(clothes) { clothes in
-                            HStack{
-                                Text(clothes.name1)
-                                    .foregroundColor(.white)
-                                    .font(.system(size: 18, weight: .regular))
-                                    .frame(width: 146, height: 20, alignment: .leading)
-                                Text(clothes.name2)
-                                    .foregroundColor(.white)
-                                    .font(.system(size: 18, weight: .regular))
-                                    .frame(width: 138, height: 20, alignment: .leading)
-                            }
-                            Divide()
-                        }
+                        RecommendGridView()
                     }
                     .frame(width: 333, height: 372)
                     .background(.clear)
@@ -119,10 +90,3 @@ struct Main_Previews: PreviewProvider {
     }
 }
 
-struct Divide: View {
-    var body: some View{
-        Rectangle()
-            .foregroundColor(.white)
-            .frame(width: 293, height: 0.5)
-    }
-}
