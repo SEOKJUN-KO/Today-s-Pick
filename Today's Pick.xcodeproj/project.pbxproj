@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		6C91155D2A8C76B8009C638C /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C91155C2A8C76B8009C638C /* Main.swift */; };
+		6C9115602A8DAD7E009C638C /* Divide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C91155F2A8DAD7E009C638C /* Divide.swift */; };
+		6C9115622A8DADCB009C638C /* RecommendGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C9115612A8DADCB009C638C /* RecommendGridView.swift */; };
 		6CF7AB6A2A2B308200683A6D /* Today_s_PickApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF7AB692A2B308200683A6D /* Today_s_PickApp.swift */; };
 		6CF7AB6C2A2B308200683A6D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF7AB6B2A2B308200683A6D /* ContentView.swift */; };
 		6CF7AB6E2A2B308300683A6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6CF7AB6D2A2B308300683A6D /* Assets.xcassets */; };
@@ -36,6 +38,8 @@
 
 /* Begin PBXFileReference section */
 		6C91155C2A8C76B8009C638C /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
+		6C91155F2A8DAD7E009C638C /* Divide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Divide.swift; sourceTree = "<group>"; };
+		6C9115612A8DADCB009C638C /* RecommendGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendGridView.swift; sourceTree = "<group>"; };
 		6CF7AB662A2B308200683A6D /* Today's Pick.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Today's Pick.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CF7AB692A2B308200683A6D /* Today_s_PickApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Today_s_PickApp.swift; sourceTree = "<group>"; };
 		6CF7AB6B2A2B308200683A6D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -73,6 +77,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6C91155E2A8DAD69009C638C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6C91155F2A8DAD7E009C638C /* Divide.swift */,
+				6C9115612A8DADCB009C638C /* RecommendGridView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		6CF7AB5D2A2B308200683A6D = {
 			isa = PBXGroup;
 			children = (
@@ -96,6 +109,7 @@
 		6CF7AB682A2B308200683A6D /* Today's Pick */ = {
 			isa = PBXGroup;
 			children = (
+				6C91155E2A8DAD69009C638C /* View */,
 				6CF7AB692A2B308200683A6D /* Today_s_PickApp.swift */,
 				6CF7AB6B2A2B308200683A6D /* ContentView.swift */,
 				6CF7AB6D2A2B308300683A6D /* Assets.xcassets */,
@@ -260,7 +274,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C9115602A8DAD7E009C638C /* Divide.swift in Sources */,
 				6C91155D2A8C76B8009C638C /* Main.swift in Sources */,
+				6C9115622A8DADCB009C638C /* RecommendGridView.swift in Sources */,
 				6CF7AB6C2A2B308200683A6D /* ContentView.swift in Sources */,
 				6CF7AB6A2A2B308200683A6D /* Today_s_PickApp.swift in Sources */,
 			);
